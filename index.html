@@ -1,15 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./src/style.scss">
-  <link rel="icon" href="./src/img/favicon.ico" sizes="32x32" />
-  <link rel="icon" href="./src/img/favicon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="./src/img/apple-touch-icon.png" />
-  <title>task-00</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style-tailwind.css" />
+    <link rel="icon" href="./src/img/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./src/img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./src/img/apple-touch-icon.png" />
+    <title>task-30</title>
+  </head>
+  <body class="bg-blue-500 flex justify-center items-center min-h-dvh">
+    <div class="flex gap-14">
+      <article
+        class="cursor-pointer group max-w-[270px] w-full bg-transparent min-h-[500px] flex flex-col justify-between rounded-sm shrink-0 [:hover]:bg-white transition-colors duration-200 ease-in-out"
+      >
+        <div
+          class="h-[350px] -translate-y-5 mx-5 hover:cursor-pointer shadow-xl/50 trigger"
+        >
+          <img
+            class="w-full h-full object-center object-cover"
+            src="./src/img/justice-league.avif"
+            alt="image"
+          />
+        </div>
+        <div
+          class="opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-200"
+        >
+          <div class="px-5">
+            <h2 class="font-bold text-center pb-0.5 uppercase">
+              JUSTICE LEAGUE
+            </h2>
+            <h3 class="text-gray-400 text-xs text-center font-medium pb-5">
+              You can't save the world alone.
+            </h3>
+            <p class="text-green-500 font-medium text-center text-base">
+              $28.00
+            </p>
+            <p class="text-gray-400 text-center line-through text-sm">$44.99</p>
+          </div>
+          <button
+            type="button"
+            class="w-full bg-gray-800 text-white uppercase rounded-b-sm py-4 hover:bg-gray-600 transition-colors ease-in duration-200 cursor-pointer mt-5"
+          >
+            buy now
+          </button>
+        </div>
+      </article>
+      <article
+        class="cursor-pointer group max-w-[270px] w-full bg-transparent min-h-[500px] flex flex-col justify-between rounded-sm shrink-0 [:hover]:bg-white transition-colors duration-200 ease-in-out"
+      >
+        <div
+          class="h-[350px] -translate-y-5 mx-5 hover:cursor-pointer shadow-xl/50 trigger"
+        >
+          <img
+            class="w-full h-full object-center object-cover"
+            src="./src/img/blade-runner.avif"
+            alt="image"
+          />
+        </div>
+        <div
+          class="opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-200"
+        >
+          <div class="px-5">
+            <h2 class="font-bold text-center pb-0.5 uppercase">blade runner</h2>
+            <p class="text-green-500 font-medium text-center text-base">
+              $24.00
+            </p>
+            <p class="text-gray-400 text-center line-through text-sm">$40.99</p>
+          </div>
+          <button
+            type="button"
+            class="w-full bg-gray-800 text-white uppercase rounded-b-sm py-4 hover:bg-gray-600 transition-colors ease-in duration-200 cursor-pointer mt-5"
+          >
+            buy now
+          </button>
+        </div>
+      </article>
+    </div>
+  </body>
 </html>

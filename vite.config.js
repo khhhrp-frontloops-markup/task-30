@@ -3,6 +3,7 @@ import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 import fs from "fs";
 import { createHtmlPlugin } from "vite-plugin-html";
+import tailwindcss from "@tailwindcss/vite";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -24,6 +25,7 @@ export default defineConfig({
     createHtmlPlugin({
       minify: true,
     }),
+    tailwindcss(),
   ],
   css: {
     preprocessorOptions: {
